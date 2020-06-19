@@ -1,0 +1,58 @@
+<div align="center">
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form ngNativeValidate [formGroup]="registerForm" class="login100-form validate-form" (ngSubmit)="onSubmit()">
+          <div class="wrap-input100 validate-input">
+            <input id="username" class="input100" type="text" formControlName="username" required pattern="[^\s]*"
+                   title="No whitespace allowed">
+            <span class="focus-input100" data-placeholder="Username"></span>
+          </div>
+          <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+            <input id="email" class="input100" type="email" name="email" email="true"
+                   formControlName="email" required pattern="[^\s]*" title="No whitespace allowed">
+            <span class="focus-input100" data-placeholder="E-Mail"></span>
+          </div>
+          <div class="wrap-input100 validate-input">
+            <input id="firstName" class="input100" type="text" formControlName="firstName" required pattern="[^\s]*"
+                   title="No whitespace allowed">
+            <span class="focus-input100" data-placeholder="First Name"></span>
+          </div>
+          <div class="wrap-input100 validate-input">
+            <input id="lastName" class="input100" type="text" formControlName="lastName" required pattern="[^\s]*"
+                   title="No whitespace allowed">
+            <span class="focus-input100" data-placeholder="Last Name"></span>
+          </div>
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+            <input class="input100" type="password" formControlName="password" required pattern="[^\s]*"
+                   title="No whitespace allowed">
+            <span class="focus-input100" data-placeholder="Palavra-Passe"></span>
+          </div>
+          <div>
+            <re-captcha  siteKey="YOUR RECAPTCHA PUBLIC KEY HERE"
+                        formControlName="captcha"></re-captcha>
+          </div>
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn">
+                Create Account
+              </button>
+            </div>
+          </div>
+          <div class="text-center p-t-115">
+						<span class="txt1">
+							Have an account?
+						</span>
+            <a class="txt2" href="/login">
+              Login
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
