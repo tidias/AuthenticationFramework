@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AuthenticationFramework
 
 
@@ -36,3 +37,6 @@ ReCaptcha v2 "I'm not a robot" for anti-botting
 
 
 # SQL
+=======
+# AuthenticationFramework
+>>>>>>> master

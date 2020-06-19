@@ -352,6 +352,7 @@ MigrationBackup/
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+<<<<<<< HEAD
 dist
 tmp
 out-tsc
@@ -360,13 +361,27 @@ bazel-out
 
 # dependencies
 node_modules
+=======
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+>>>>>>> master
 
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
 
 # IDEs and editors
+<<<<<<< HEAD
 .idea
+=======
+/.idea
+>>>>>>> master
 .project
 .classpath
 .c9/
@@ -383,6 +398,7 @@ speed-measure-plugin*.json
 .history/*
 
 # misc
+<<<<<<< HEAD
 .sass-cache
 connect.lock
 coverage
@@ -391,6 +407,16 @@ npm-debug.log
 yarn-error.log
 testem.log
 typings
+=======
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+>>>>>>> master
 
 # System Files
 .DS_Store
